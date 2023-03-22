@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,6 +28,8 @@ SECRET_KEY = 'django-insecure-tbrv*+t+ndclp6hsjzv7^70q$)^#yoj96+^&hyi@)d$so*x$)_
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+
+
 
 
 # Application definition
@@ -129,8 +132,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+# Serve static files from the static folder
+STATIC_ROOT =os.path.join(BASE_DIR, 'image-data')
+
 STATIC_URL = 'static/'
-STATIC_ROOT = 'image-data/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -172,4 +177,4 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=2)
 }
 
-CSRF_TRUSTED_ORIGINS = ['https://yoloo-backend.herokuapp.com', 'https://yoloo.store/']
+CSRF_TRUSTED_ORIGINS = ['https://yoloo-backend.herokuapp.com', 'https://yoloo.store/', "*"]
