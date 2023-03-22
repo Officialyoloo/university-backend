@@ -1,0 +1,14 @@
+django
+djangorestframework
+djangorestframework-simplejwt
+requests
+python-dateutil
+django-cors-headers
+razorpay
+python-environ
+gunicorn
+whitenoise
+pycryptodome
+channels
+daphne
+channels-redis
