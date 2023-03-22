@@ -177,4 +177,4 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=2)
 }
 
-CSRF_TRUSTED_ORIGINS = ['https://yoloo-backend.herokuapp.com', 'https://yoloo.store/', "*"]
+CSRF_TRUSTED_ORIGINS = ['https://yoloo-backend.herokuapp.com', 'https://yoloo.store/']
