@@ -189,4 +189,5 @@ CSRF_TRUSTED_ORIGINS = [
     'https://yoloo.store/', 
     "https://web-production-823f.up.railway.app",
     "https://university-frontend-flame.vercel.app",
+    "https://university-backend.yolooindia.com",
 ]
